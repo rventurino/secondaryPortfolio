@@ -1,0 +1,292 @@
+/*=====================UTILITY */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFoGnt, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+/*=====================NAVIGATION*/
+header {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#e66465, #9198e5);
+}
+header .container {
+  width: 100%;
+}
+header h1 {
+  font-size: 3rem;
+  padding-left: 3rem;
+  margin-right: 3rem;
+}
+header nav {
+  width: 50%;
+  height: 50%;
+  border-left: 3px solid white;
+}
+header nav ul {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+}
+header nav ul li {
+}
+header nav ul li a {
+  color: white;
+  font-size: 2rem;
+}
+/*===================== ABOUT/HERO SECTION*/
+#hero {
+  display: flex;
+  width: 100%;
+  background-color: aqua;
+  height: 50rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(87, 3, 3, 0.534),
+      rgba(34, 96, 195, 0.73)
+    ),
+    url("img/oriental-tiles.png");
+}
+
+#hero .left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero .left #triangleContainer {
+  display: grid;
+  width: 20rem;
+  height: 40rem;
+  row-gap: 5px;
+  grid-template-rows: repeat(10%, 1vw);
+  justify-items: center;
+  transform: rotate(90deg);
+}
+#hero .right {
+  position: relative;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 60%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.534),
+      rgba(28, 24, 53, 0.73)
+    ),
+    url("img/casey-horner-RmoWqDCqN2E-unsplash.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+  border-top-left-radius: 30rem;
+  border-bottom-left-radius: 30rem;
+}
+#hero .right .content {
+  margin-left: 3rem;
+}
+#hero .right .content ul {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 4rem;
+}
+
+/*=====================ANIMATED TRIANGLE*/
+
+.triangleSection {
+  border-radius: 3rem;
+}
+#one {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 2rem;
+  animation-name: one;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes one {
+  0% {
+    width: 2rem;
+  }
+  25% {
+    width: 4rem;
+  }
+  100% {
+    width: 2rem;
+  }
+}
+#two {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 4rem;
+  animation-name: two;
+  animation-duration: 1.5s;
+  animation-delay: 0.1s;
+  animation-iteration-count: infinite;
+}
+@keyframes two {
+  0% {
+    width: 4rem;
+  }
+  25% {
+    width: 8rem;
+  }
+  100% {
+    width: 4rem;
+  }
+}
+
+#three {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 6rem;
+  animation-name: three;
+  animation-duration: 1.5s;
+  animation-delay: 0.15s;
+  animation-iteration-count: infinite;
+}
+@keyframes three {
+  0% {
+    width: 6rem;
+  }
+  25% {
+    width: 9rem;
+  }
+  100% {
+    width: 6rem;
+  }
+}
+
+#four {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 8rem;
+  animation-name: four;
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+@keyframes four {
+  0% {
+    width: 8rem;
+  }
+  25% {
+    width: 10rem;
+  }
+  100% {
+    width: 8rem;
+  }
+}
+#five {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 10rem;
+  animation-name: five;
+  animation-duration: 1.5s;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+}
+@keyframes five {
+  0% {
+    width: 10rem;
+  }
+  25% {
+    width: 12rem;
+  }
+  100% {
+    width: 10rem;
+  }
+}
+
+#six {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 12rem;
+  animation-name: six;
+  animation-duration: 1.5s;
+  animation-delay: 0.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes six {
+  0% {
+    width: 12rem;
+  }
+  25% {
+    width: 15rem;
+  }
+  100% {
+    width: 12rem;
+  }
+}
+#seven {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 14rem;
+  animation-name: seven;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes seven {
+  0% {
+    width: 14rem;
+  }
+  25% {
+    width: 16rem;
+  }
+  100% {
+    width: 14rem;
+  }
+}
+#eight {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 16rem;
+  animation-name: eight;
+  animation-duration: 1.5s;
+  animation-delay: 0.6s;
+  animation-iteration-count: infinite;
+}
+@keyframes eight {
+  0% {
+    width: 16rem;
+  }
+  25% {
+    width: 18rem;
+  }
+  100% {
+    width: 16rem;
+  }
+}
+#nine {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 18rem;
+  animation-name: nine;
+  animation-duration: 1.5s;
+  animation-delay: 0.7s;
+  animation-iteration-count: infinite;
+}
+@keyframes nine {
+  0% {
+    width: 18rem;
+  }
+  25% {
+    width: 19rem;
+  }
+  100% {
+    width: 18rem;
+  }
+}
