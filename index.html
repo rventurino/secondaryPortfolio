@@ -7,23 +7,30 @@
       src="https://kit.fontawesome.com/3f036a4888.js"
       crossorigin="anonymous"
     ></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Flarble | Find ur Coding Marbles</title>
   </head>
   <body>
-    <header>
-      <h1>Flarble</h1>
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Lessons</a></li>
-          <li><a href="#">Portfolio</a></li>
-        </ul>
-      </nav>
-    </header>
-
+    
+      <header>
+        <div class="headerContainer"></div>
+        <a class="navTitle" href="#"><h1>Flarble</h1></a>
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Lessons</a></li>
+            <li><a href="#">Portfolio</a></li>
+          </ul>
+        </nav>
+      </div>
+      </header>
+    
     <section id="hero">
-      <div class="left">
+      <img id="fractal" src="img/Fractal-PNG-Image.png" alt="">
+      <div class="loader">
         <div id="triangleContainer">
           <div class="triangleSection" id="one"></div>
           <div class="triangleSection" id="two"></div>
@@ -36,35 +43,97 @@
           <div class="triangleSection" id="nine"></div>
           <div class="triangleSection" id="ten"></div>
         </div>
-      </div>
-      <div class="right">
+        </div>
+        
+      
         <div class="content">
-          <h2>Flarble</h2>
-          <p>I’ll help you find your coding marbles</p>
+          <div class="text">
+            <p class="head">Flarble</p>
+            <p class="head2"> Flarble</p>
+          <h3>He WILL help you find your coding marbles</h3>
           <ul>
-            <li class="html">HTML</li>
-            <li class="css">CSS</li>
-            <li class="JavaScript">JavaScript</li>
-            <li>Java</li>
-            <li>Computer Science</li>
+            <li ><a href="#" class="html expands">HTML</a></li>
+            <li > <a href="#" class="css expands">CSS</a> </li>
+            <li>  <a href="#" class="Java expands">Java</a> </li>
+            <li > <a href="#" class="JavaScript expands">JavaScript</a> </li>
+            
+            <li ><a href="#" class="compSci expands">Computer Science</a></li>
+          </div>
           </ul>
         </div>
-      </div>
+        
     </section>
+    
+
     <section id="about">
-      <article>
-        <i class="fas fa-code"></i>
+      <div class="flex-container">
+      <img src="img/saturn.png" alt="saturn">
+      <div class="text">
+        <h1>Flarble</h1>
+        <p>Namaste. Flarble can teach you web development concepts, help you develop your own websites, or build you a custom website.</p>
+        <br>
         <p>
-          "The capacity to learn is a <em>gift;</em> the ability to learn is a
-          <em>skill;</em> the willingness to learn is a <em>choice."</em>
+          Get in touch: 
         </p>
-        <p>-Brian Herbert</p>
-        <div class="discord">
-          <i class="fab fa-discord"></i>
-          <h4>flarble#5658</h4>
-        </div>
-      </article>
+        <a href="https://discord.com/app"><i class="fab fa-discord"></i></a>
+        <p>flarble#5658</p>
+      </div>
+      <img src="img/bigBrainWires.png" id="wires" alt="">
+    </div>
     </section>
+
+    <section id="lessons">
+      <div class="box1"></div>
+      <div class="box2 windows98">
+        <section class="theWindow">
+        <article class="title">
+          <div class="heading">windowNameHere.exe</div>
+          <button class="minimize windowbutton"><i class="fas fa-window-minimize"></i></button>
+          <button class="maximize windowbutton"><i class="far fa-window-maximize"></i></button>
+          <button class="close windowbutton"><i class="fas fa-times"></i></button>
+        </article>
+        <article class="contentArea">
+            <div class="left">
+              <i class="fab fa-html5"></i>
+            </div>
+            <div class="right">
+              <h1>titleGoesHere</h1>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsam tempora, velit, neque quo maiores, enim odio vitae dolore fugit suscipit nobis ullam. Incidunt delectus aut eius, deserunt maiores consectetur!
+              </p>
+              <div class="iCanTeach">
+                <p>
+                  Hypertext Markup Language (HTML) is the standard markup language
+                  for documents designed to be displayed in a web browser.
+                </p>
+              </div>
+              <p><strong>I can teach you: </strong></p>
+              <ul>
+                <li>HTML Elements, Attributes, and basic properties</li>
+                <li>Page layout and formatting</li>
+                <li>Introduction to HTML styling</li>
+              </ul>
+              </div>
+            </div>
+        </article>
+        <article>
+          <div class="bottomButtons">
+              <button class="cancel">Cancel</button>
+              <button class="ok">Okay</button>
+          </div>
+        </article>
+      </section>
+
+      </div>
+      <div class="box3 windows98"></div>
+      <div class="box4 windows98"></div>
+      <div class="box5 windows98"></div>
+      <div class="box6 windows98"></div>
+      <div class="box7 windows98"></div>
+      <div class="box8 windows98"></div>
+    </section>
+
+<!--
     <section id="lessons">
       <div class="container contact">
         <h3 id="subjects" style="text-align: center">Subjects</h3>
@@ -166,6 +235,7 @@
         </div>
       </div>
     </section>
+    -->
     <section class="portfolio">
       <h1>Portfolio</h1>
       <div class="descriptionCard"></div>
