@@ -8,13 +8,27 @@
   font-family: SFAlienEncounters;
   src: url("resources/TrueType/SFAlienEncounters.ttf");
 }
+@font-face {
+  font-family: oldschool;
+  src: url("resources/windowsdialog/lunchds.ttf");
+}
+@font-face {
+  font-family: unibody8;
+  src: url("resources/Unibody8Regular/Unibody8Regular.ttf");
+}
+
 body {
+  /*
   background-image: linear-gradient(
     black,
+    blue,
     rgb(45, 43, 58),
-    rgba(205, 7, 0, 0.25),
+    pink,
+    rgba(0, 0, 255, 0.205),
     rgba(0, 0, 205, 0)
   );
+  */
+  background-color: #333;
 }
 html {
   font-size: 62.5%;
@@ -119,14 +133,6 @@ nav ul li:hover {
   border-bottom: 6px dotted #9198e5;
 }
 
-#hero #fractal {
-  background-color: #e5a591;
-  opacity: 0.2;
-  border-radius: 50%;
-  animation-name: wiggle;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-}
 .text {
   font-size: 2rem;
 }
@@ -180,6 +186,9 @@ nav ul li:hover {
   );
 
   border-radius: 50%;
+}
+#hero .content:hover {
+  text-shadow: 1px 1px #00ff00;
 }
 #hero .content .text .head2 {
   font-size: 6vw;
@@ -273,9 +282,6 @@ nav ul li:hover {
   font-size: 2vw;
   letter-spacing: 1px;
   transition: all 0.2s ease-in;
-  animation-name: wiggle;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
 }
 
 #hero ul li a:hover {
@@ -293,7 +299,16 @@ nav ul li:hover {
     left: 10vw;
   }
 }
-#hero .content ul {
+/*===================Introdcution*/
+.introduction {
+  /*Comment me out, i am a template*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--silver);
+  background-image: url("img/tokyo.jpg");
+  background-size: 40rem;
+  height: 110vh;
 }
 
 /*=====================ABOUT */
@@ -304,7 +319,7 @@ nav ul li:hover {
   justify-content: center;
   font-family: "JetBrains Mono", monospace;
   border: 30px solid transparent;
-  border-radius: 10px;
+
   border-image: url("img/metal.jpg") 50 round;
   color: white;
 
@@ -389,6 +404,26 @@ nav ul li:hover {
 }
 
 /*=====================LESSONS */
+#lessons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 6px dotted #9198e5;
+  padding-top: 0;
+  margin-top: 0;
+}
+#lessonsHead {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 10rem;
+}
+#lessonsHead #fractal img {
+  width: 10rem;
+}
 
 /*=====================ANIMATED TRIANGLE*/
 
@@ -662,4 +697,133 @@ z-index: 99;
   100% {
     transform: skewX(0deg);
   }
+}
+
+/*MS WINDOWS BOX STYLING*/
+/*colors*/
+:root {
+  --mantis: #70bc4fff;
+  --middle-blue-purple: #8080c0ff;
+  --rich-black-fogra-39: #040204ff;
+  --skobeloff: rgb(4, 124, 126);
+  --silver: #c4c2c4ff;
+  --fuchsia: #fc0ffcff;
+}
+.box2 {
+  /*Comment me out, i am a template*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--silver);
+}
+.theWindow {
+  width: 80%;
+  height: 500px;
+  font-family: oldschool;
+  border: 2px solid gray;
+  border-left: 2px solid rgb(197, 197, 197);
+  max-width: 960px;
+  margin: 3rem 0 3rem 0;
+  box-shadow: 20px 15px #00ff00;
+}
+
+.theWindow .title {
+  background-image: url("resources/windowsdialog/titleBG.jpg");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5%;
+}
+.theWindow button {
+  font-family: oldschool;
+  height: 3rem;
+  width: 9rem;
+  border-right: 2px solid rgb(63, 63, 63);
+  border-bottom: 2px solid rgb(63, 63, 63);
+  background-color: var(--silver);
+}
+.theWindow .title .heading {
+  color: white;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+.theWindow .title .topButtons {
+  width: 6rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem 0 1rem;
+}
+.theWindow .title .topButtons button {
+  box-shadow: 1px 1px black;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.theWindow .page {
+  height: 95%;
+  padding: 1rem;
+
+  background-color: var(--silver);
+  font-size: 2rem;
+  border-left: 1px solid grey;
+}
+.theWindow .page strong {
+  font-family: SFAlienEncounters;
+  font-weight: bold;
+  padding-left: 2rem;
+  color: var(--fuchsia);
+  font-size: 2rem;
+  text-shadow: 2px 2px var(--skobeloff);
+}
+.theWindow ul {
+  padding-left: 6rem;
+  border: rgb(155, 154, 154);
+}
+.theWindow .page h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 4rem;
+}
+.theWindow .page p {
+  text-align: justify;
+  padding: 2rem;
+  font-weight: lighter;
+}
+.theWindow .page ul {
+  font-family: "Times New Roman", Times, serif;
+}
+.theWindow .contentArea {
+  height: 87.5%;
+  background-color: var(--silver);
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 4fr;
+}
+.theWindow .contentArea .left img {
+  max-width: 100%;
+}
+.theWindow .line {
+  height: 2px;
+  width: 100%;
+  background-color: rgb(155, 154, 154);
+  border-top: 1px solid rgb(155, 154, 154);
+  border-bottom: 1.5px solid rgb(245, 245, 245);
+  border-right: 1px solid rgb(245, 245, 245);
+}
+.theWindow .bottomButtons {
+  background-color: var(--silver);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: 12.5%;
+}
+.theWindow span {
+  font-weight: bold;
+  font-style: italic;
+}
+.theWindow .bottomButtons .buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.theWindow .bottomButtons .buttonContainer {
+  padding-right: 8px;
 }
