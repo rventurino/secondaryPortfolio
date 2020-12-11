@@ -20,7 +20,7 @@
         <a class="navTitle" href="#"><h1>Flarble</h1></a>
         <nav>
           <ul>
-            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
             <li><a href="#">Lessons</a></li>
             <li><a href="#">Portfolio</a></li>
           </ul>
@@ -86,9 +86,9 @@
                 </div>
                 <div class="right">
                   
-                  <h1>Coding Skills Stuck in 1999?</h1>
+                  <h1>Website Stuck in 1999?</h1>
                   <p class="description">
-                    As an aspiring web-developer with nearly 2 years of personal experience coding, I would like to share my knowledge with you. 
+                    As an aspiring web-developer with nearly 2 years of personal experience coding, I would like to help you.
                   </p>
                   <div class="iCanTeach">
                     
@@ -96,7 +96,6 @@
                   <p><strong>I can teach you </strong></p>
                   <ul>
                     <li>Build your own static web pages</li>
-                    
                     <li>Make your work <span>stand out</span> with animations, mobile design, and more. </li>
                     <li>Make tic-tac-toe, snake, or other games with Javascript</li>
                   </ul>
@@ -110,8 +109,8 @@
               <div class="buttonContainer">
                 <div class="left"></div>
                 <div class="right">
-                  <button class="cancel">Cancel</button>
-                  <button class="ok">Okay</button>
+                  <button class="contactFlarble">Contact Me</button>
+                  <button class="ok">Read More</button>
               </div>
               </div>
             </article>
@@ -123,195 +122,68 @@
   </section>
   <!--END OF BOX 2-->
 
+    
+    <section id="portfolio">
+      <div class="content">
+       
+        <section class="theWindow">
+         
+          <article class="title">
+            <div class="heading">Portfolio.exe</div>
+            <div class="topButtons">
+              <button class="minimize windowbutton"><i class="fas fa-window-minimize"></i></button>
+            <button class="maximize windowbutton"><i class="far fa-window-maximize"></i></button>
+            <button class="close windowbutton"><i class="fas fa-times"></i></button>
+            </div>
+          </article>
+          <article class="page">
+            <article class="contentArea">
+              <div class="left">
+                <h1>My Portfolio</h1>
+              </div>
+                  
+              <iframe src="portfolio/portfolio.html"></iframe>
+                
+            </article>
+            
+            <article class="bottomButtons">
+              <div class="line"></div>
+              <div class="buttonContainer">
+                <div class="left"></div>
+                <div class="right">
+                  <button class="contactFlarble">Contact Me</button>
+                  <button class="ok">Read More</button>
+              </div>
+              </div>
+            </article>
+      </article>
+    </section>
+      </div>
+      
+    </section>
+
+    <iframe src="lessons/index.html" frameborder="0" scrolling="no" id="furtherReading"></iframe>
     <section id="about">
       <div class="flex-container">
       <img src="img/saturn.png" alt="saturn">
       <div class="text">
         <h1>Flarble</h1>
-        <p>Namaste. Flarble can teach you web development concepts, help you develop your own websites, or build you a custom website.</p>
+        <p>I can teach you web development concepts, help you develop your own websites, or build you a custom website.</p>
         <br>
         <p>
           Get in touch: 
         </p>
-        <a href="https://discord.com/app"><i class="fab fa-discord"></i></a>
-        <p>flarble#5658</p>
+        
+        
+          <i class="fab fa-discord" onclick="copyContact()"></i>
+          <p id="c2c"><em>Click to copy</em></p>
+       
+        <input type="text" value="flarble#5658" id="contactMe" onclick="copyContact()">
       </div>
       <img src="img/bigBrainWires.png" id="wires" alt="">
     </div>
     </section>
-
-    <section id="lessons">
-      <div class="lessonsInner">
-        
-        <section id="lessonsContainer">
-          <div class="box1"></div>
-          <div class="box2 windows98">
-
-            <!--TOP OF WINDOW-->
-              <section class="theWindow">
-               
-                <article class="title">
-                  <div class="heading">Learn to code.exe</div>
-                  <div class="topButtons">
-                    <button class="minimize windowbutton"><i class="fas fa-window-minimize"></i></button>
-                  <button class="maximize windowbutton"><i class="far fa-window-maximize"></i></button>
-                  <button class="close windowbutton"><i class="fas fa-times"></i></button>
-                  </div>
-                </article>
-                <article class="page">
-                  <article class="contentArea">
-                      <div class="left">
-                        <!--<i class="fab fa-html5"></i>-->
-                        <img src="resources/windowsdialog/sampleWindow.jpg" alt="">
-                      </div>
-                      <div class="right">
-                        
-                        <h1>Coding Skills Stuck in 1999?</h1>
-                        <p class="description">
-                          As an aspiring web-developer with nearly 2 years of personal experience coding, I would like to share my knowledge with you. 
-                        </p>
-                        <div class="iCanTeach">
-                          
-                        </div>
-                        <p><strong>I can teach you </strong></p>
-                        <ul>
-                          <li>Build your own static web pages</li>
-                          
-                          <li>Make your work <span>stand out</span> with animations, mobile design, and more. </li>
-                          <li>Make tic-tac-toe, snake, or other games with Javascript</li>
-                        </ul>
-                        
-                      </div>
-                      
-                  </article>
-                  
-                  <article class="bottomButtons">
-                    <div class="line"></div>
-                    <div class="buttonContainer">
-                      <div class="left"></div>
-                      <div class="right">
-                        <button class="cancel">Cancel</button>
-                        <button class="ok">Okay</button>
-                    </div>
-                    </div>
-                  </article>
-            </article>
-          </section>
-      </div>
-          <!--END OF WINDOW-->
-          
-        </section>
-        <!--END OF BOX 2-->
-      </div>
-  </section>
-      <!--END OF LESSONS -->
-
-<!--
-    <section id="lessons">
-      <div class="container contact">
-        <h3 id="subjects" style="text-align: center">Subjects</h3>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="six columns one">
-            <div class="title">
-              <i class="fab fa-html5" style="color: orange"></i>
-              <h3>HTML5</h3>
-              <p>
-                Hypertext Markup Language (HTML) is the standard markup language
-                for documents designed to be displayed in a web browser.
-              </p>
-            </div>
-            <p><strong>I can teach you: </strong></p>
-            <ul>
-              <li>HTML Elements, Attributes, and basic properties</li>
-              <li>Page layout and formatting</li>
-              <li>Introduction to HTML styling</li>
-            </ul>
-          </div>
-
-          <div class="six columns two">
-            <div class="title">
-              <i class="fab fa-css3-alt" style="color: #4666ff"></i>
-              <h3>CSS3</h3>
-            </div>
-            <p>
-              Cascading Style Sheets (CSS) is a style sheet language used for
-              describing the presentation of a document written in a markup
-              language such as HTML. CSS is a cornerstone technology of the
-              World Wide Web, alongside HTML and JavaScript.
-            </p>
-            <p><strong>I can teach you: </strong></p>
-
-            <ul>
-              <li>Basic Syntax, Selectors, and examples</li>
-              <li>Use HTML and CSS to build components</li>
-              <li>CSS Grid, flex-box, and animations</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="six columns three">
-            <div class="title">
-              <i class="fab fa-js-square" style="color: #f7df1e"></i>
-              <h3>JavaScript</h3>
-            </div>
-            <p>
-              Alongside HTML and CSS, JavaScript is one of the core technologies
-              of the World Wide Web. JavaScript enables interactive web pages
-              and is an essential part of web applications. The vast majority of
-              websites use it for client-side page behavior, and all major web
-              browsers have a dedicated JavaScript engine to execute it.
-            </p>
-            <p><strong>I can teach you: </strong></p>
-            <ul>
-              <li>Programming fundamentals</li>
-              <li>How to incorporate JavaScript in to your web pages</li>
-              <li>Basic Data Structures and Algorithms</li>
-            </ul>
-          </div>
-          <div class="six columns four">
-            <div class="title">
-              <i class="fab fa-java" style="color: #800020"></i>
-              <h3>Java</h3>
-            </div>
-            <p>
-              Java is a general-purpose programming language intended to let
-              application developers write once, run anywhere (WORA), meaning
-              that compiled Java code can run on all platforms that support Java
-              without the need for recompilation.
-            </p>
-            <p><strong>I can teach you: </strong></p>
-            <ul>
-              <li>Classes, methods, loops, arrays, and other fundamentals</li>
-              <li>Basic Data Structures and Algorithms</li>
-              <li>Exception handling and text I/O</li>
-            </ul>
-          </div>
-        </div>
-        <script>
-          let home = document.getElementById("home");
-          let portfolio = document.getElementById("portfolio");
-
-          home.addEventListener("click", () => {
-            location.href = "../index.html";
-          });
-
-          portfolio.addEventListener("click", () => {
-            location.href = "../portfolio.html";
-          });
-        </script>
-
-        <div class="discord">
-          <i class="fab fa-discord"></i>
-          <h4>flarble#5658</h4>
-        </div>
-      </div>
-    </section>
-    -->
-    <section class="portfolio">
-      <h1>Portfolio</h1>
-      <div class="descriptionCard"></div>
-    </section>
+    
+    <script src="app.js"></script>
   </body>
 </html>
