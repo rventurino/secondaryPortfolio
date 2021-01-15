@@ -154,7 +154,7 @@ nav ul li:hover {
   justify-content: center;
   width: 100%;
   background-color: aqua;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
   background-image: linear-gradient(
       to bottom,
@@ -170,7 +170,7 @@ nav ul li:hover {
 }
 .loader {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-color: white;
   position: absolute;
   display: flex;
@@ -366,20 +366,21 @@ nav ul li:hover {
 #portfolio {
   height: 140vh;
   display: flex;
-  background-image: url("img/tokyo.jpg");
+  background: linear-gradient(to right green, red);
   background-size: cover;
-  align-items: center;
-  justify-content: center;
+  align-items: top;
+  justify-content: left;
 }
 #portfolio .content {
-  width: 80%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 #portfolio .theWindow {
+  height: 90vh;
   width: 100%;
-  height: 120vh;
+  margin: 0;
 }
 #portfolio h1 {
   font-family: "Times New Roman", Times, serif;
@@ -398,7 +399,7 @@ Further reading ================================================================
 */
 #furtherReading {
   width: 100%;
-  height: 200vh;
+  height: 150vh;
 }
 /*8888888          888                     
   888            888                     
@@ -412,20 +413,34 @@ Further reading ================================================================
                                          
                                          */
 .introduction {
-  /*Comment me out, i am a template*/
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 3rem;
   background-color: var(--silver);
-  background-image: url("img/tokyo.jpg");
-  background-size: 40rem;
+  background-color: #333;
+  background-size: 60rem;
   height: 110vh;
 }
-
+.introduction .alert {
+  background-image: url("img/diego-ph-5LOhydOtTKU-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 540px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 30px;
+  font-size: 2rem;
+  border: 8px solid #339;
+}
 /*=====================ABOUT */
 #about {
   display: flex;
-
   align-items: center;
   justify-content: center;
   font-family: "JetBrains Mono", monospace;
@@ -524,6 +539,10 @@ Further reading ================================================================
   100% {
     transform: skewX(0deg);
   }
+}
+#about a {
+  text-decoration: none;
+  color: #ff6ec7;
 }
 
 /*
@@ -831,7 +850,7 @@ z-index: 99;
   }
 }
 
-/*MS WINDOWS BOX STYLING*/
+/*MS WINDOWS BOX STYLING*************************************************************************************************************************************************************************************/
 /*colors*/
 :root {
   --mantis: #70bc4fff;
@@ -856,7 +875,7 @@ z-index: 99;
   border-left: 2px solid rgb(197, 197, 197);
   max-width: 960px;
   margin: 3rem 0 3rem 0;
-  box-shadow: 20px 15px #00ff00;
+  box-shadow: 10px 10px #339;
 }
 
 .theWindow .title {
@@ -868,8 +887,9 @@ z-index: 99;
 }
 .theWindow button {
   font-family: oldschool;
-  height: 3rem;
-  width: 9rem;
+  font-size: 1.4rem;
+  height: 4rem;
+  width: 12rem;
   border-right: 2px solid rgb(63, 63, 63);
   border-bottom: 2px solid rgb(63, 63, 63);
   background-color: var(--silver);
@@ -984,8 +1004,88 @@ z-index: 99;
 */
 
 @media screen and (max-width: 481px) {
-  body {
-    background-color: lightgreen;
+  /* WINDOWS98 TOP =============================================================================================================================================================================================
+  */
+  html {
+    font-size: 62.5%;
+  }
+  .loader {
+    width: 100vw;
+    height: 120vh;
+  }
+  #triangleContainer {
+    width: 10rem;
+    height: 20rem;
+  }
+
+  .introduction {
+    /*Comment me out, i am a template*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--silver);
+    background-image: url("img/tokyo.jpg");
+    background-size: 40rem;
+    height: 90vh;
+  }
+  .theWindow {
+    width: 100%;
+    height: 90vh;
+    font-family: oldschool;
+    border: 2px solid gray;
+    border-left: 2px solid rgb(197, 197, 197);
+    max-width: 960px;
+    margin: 3rem 0 3rem 0;
+    box-shadow: none;
+    border-top: 10px solid pink;
+  }
+  .theWindow .contentArea .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .theWindow .description {
+    font-family: monospace;
+  }
+  .theWindow .contentArea .left img {
+    display: none;
+  }
+  .theWindow .contentArea {
+    display: flex;
+    flex-direction: column;
+  }
+  /*PORTFOLIO============================================================================================================================================================*/
+  #portfolio {
+    height: 110vh;
+    border: none;
+    background-color: pink;
+    background-image: none;
+  }
+  #portfolio .content {
+    border: none;
+    width: 100vw;
+  }
+  #portfolio .theWindow {
+    height: 90vh;
+    width: 200rem;
+  }
+  #portfolio h1 {
+    font-family: "Times New Roman", Times, serif;
+  }
+  #portfolio .theWindow .contentArea {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+  }
+  #portfolio .theWindow .contentArea iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*========================================================================================================================Further reading */
+  #furtherReading {
+    width: 100%;
+    height: 460vh;
   }
 }
 

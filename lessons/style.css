@@ -105,3 +105,14 @@ i {
     height: 100vh;
   }
 }
+@media screen and (max-width: 481px) {
+  .six,
+  .one,
+  .two {
+    height: auto;
+  }
+  .three,
+  .four {
+    height: auto;
+  }
+}

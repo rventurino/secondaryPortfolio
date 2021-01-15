@@ -29,3 +29,10 @@ function copyContact() {
   /* Alert the copied text */
   alert("Copied the text: " + copyText.value);
 }
+/**** MOBILE STYLING FOR THE HERO SECTION, PROPORTIONS ON THE SUN ARE WEIRD */
+let w = window.innerWidth;
+let h = window.innerHeight;
+let heroTagline = document.getElementById("heroTagline");
+if (w <= 481) {
+  heroTagline.style = "display: none;";
+}
